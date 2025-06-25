@@ -1,0 +1,10 @@
+src/
+    redux/
+        store.ts
+        reducers/
+            sampleReducer.ts
+            index.ts
+        actions/
+            sampleActions.ts
+        types/
+            sampleTypes.ts
