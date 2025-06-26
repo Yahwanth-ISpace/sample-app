@@ -1,5 +1,4 @@
+// types/index.ts
 import * as sampleTypes from "./sampleTypes";
 
-export default {
-  SampleTypes: sampleTypes,
-};
+export { sampleTypes as SampleTypes };

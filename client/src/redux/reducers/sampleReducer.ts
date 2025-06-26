@@ -1,6 +1,4 @@
 // reducers/sampleReducer.ts
-
-import { SampleActions } from "../actions";
 import { SampleTypes } from "../types";
 
 export interface SampleState {
@@ -17,22 +15,22 @@ const initialState: SampleState = {
 
 export const sampleReducer = (
   state: SampleState = initialState,
-  action: SampleActions
+  action: SampleTypes.SampleAction
 ): SampleState => {
   switch (action.type) {
-    case SAMPLE_ACTION_REQUEST:
+    case SampleTypes.SAMPLE_ACTION_REQUEST:
       return {
         ...state,
         loading: true,
         error: null,
       };
-    case SAMPLE_ACTION_SUCCESS:
+    case SampleTypes.SAMPLE_ACTION_SUCCESS:
       return {
         ...state,
         loading: false,
         data: action.payload,
       };
-    case SAMPLE_ACTION_FAILURE:
+    case SampleTypes.SAMPLE_ACTION_FAILURE:
       return {
         ...state,
         loading: false,

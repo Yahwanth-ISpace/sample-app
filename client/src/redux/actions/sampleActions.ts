@@ -1,20 +1,23 @@
-import {
-  SampleTypes
-} from "../types";
-
+import { SampleTypes } from "../types";
 
 // Action Creators
-export const sampleActionRequest = (payload?: string): SampleActionRequest => ({
-  type: SAMPLE_ACTION_REQUEST,
+export const sampleActionRequest = (
+  payload?: string
+): SampleTypes.SampleActionRequest => ({
+  type: SampleTypes.SAMPLE_ACTION_REQUEST,
   payload,
 });
 
-export const sampleActionSuccess = (payload: string): SampleActionSuccess => ({
-  type: SAMPLE_ACTION_SUCCESS,
+export const sampleActionSuccess = (
+  payload: string
+): SampleTypes.SampleActionSuccess => ({
+  type: SampleTypes.SAMPLE_ACTION_SUCCESS,
   payload,
 });
 
-export const sampleActionFailure = (error: string): SampleActionFailure => ({
-  type: SAMPLE_ACTION_FAILURE,
+export const sampleActionFailure = (
+  error: string
+): SampleTypes.SampleActionFailure => ({
+  type: SampleTypes.SAMPLE_ACTION_FAILURE,
   error,
 });

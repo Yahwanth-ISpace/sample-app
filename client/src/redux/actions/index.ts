@@ -1,5 +1,3 @@
 import * as sampleActions from "./sampleActions";
 
-export default {
-  SampleActions: sampleActions,
-};
+export { sampleActions as SampleActions };
